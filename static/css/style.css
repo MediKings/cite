@@ -1,0 +1,349 @@
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 0px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid rgb(0, 33, 118);
+    z-index: 999;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+/* .text-fff{
+    color: rgb(175, 175, 175);
+} */
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+header .navbar-brand{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+header #menu .nav-item{
+    position: relative;
+}
+
+#menu .nav-link{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 20px;
+    transition: 300ms all;
+}
+
+#menu .nav-link:hover{
+    color: rgb(0, 33, 118);
+}
+
+header #menu .nav-link::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 0%;
+    background-color: #fff;
+    transition: 300ms all;
+    z-index: -1;
+}
+
+header #menu .nav-link:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+header .navbar i{
+    font-size: 20px;
+}
+
+.hero{
+    width: 100%;
+    height: 750px;
+    position: relative;
+    margin-top: 65px;
+    background-image: url("../img/culte/img5.jpg");
+    background-size: cover;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #111c;
+}
+
+.hero .hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 70px 30px;
+    color: #fff;
+    /* box-shadow: 0px 0px 20px #ccd; */
+    border-radius: 20px;
+}
+
+.hero .hero-content h1{
+    font-weight: 600;
+}
+
+.hero-content h1 span{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.hero .hero-content a{
+    display: block;
+    width: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    color: #fff;
+    margin: 20px 10px;
+    transition: all 0.5s;
+    border: 1px solid #fff;
+}
+
+.hero .hero-content a:hover{
+    background-color: rgb(0, 33, 118);
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Hero responsive */
+
+@media all and (max-width: 767px){
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .hero{
+        height: 650px;
+    }
+
+    .hero .hero-content{
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .hero .hero-content h1{
+        font-size: 35px;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    
+    .hero-content h1 span{
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+}
+
+/* End Hero responsive */
+
+.main section{
+    padding: 100px 0px;
+}
+
+#sliders{
+    background-color: darkgoldenrod;
+}
+
+#sliders .slide-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-color: rgb(92, 59, 59);
+    border: 15px solid rgb(92, 59, 59);
+}
+
+#sliders .slide-box .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-color: rgb(92, 59, 59);
+    border: 15px solid rgb(92, 59, 59);
+}
+    
+.annonce{
+    background-color: #111;
+    color: #fff;
+}
+
+.annonce .right h1{
+    font-size: 10rem;
+    font-weight: 800;
+}
+
+.annonce .right h2{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 10px 0px;
+    text-align: center;
+} 
+
+.annonce .imgs img{
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+} 
+
+.social{
+    background-color: #000;
+}
+
+.social i{
+    color: #fff;
+    font-size: 40px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+/* Annonce responsive */
+
+@media all and (max-width: 992px){
+
+    .annonce .right h1{
+        font-size: 7rem;
+        font-weight: 800;
+    }
+    
+    .annonce .right h2{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 0px;
+        text-align: center;
+    } 
+
+}
+
+/* End Annonce responsive */
+
+.about{
+    background-image: url('../img/bg-text.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.about h3{
+    margin-top: 50px;
+}
+
+.about .time{
+    border-left: 3px solid #fff;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.event{
+    color: #000;
+}
+
+.main .event h2:hover, #events h2:hover{
+    color: rgb(0, 33, 118);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.main .event .detail{
+    line-height: 30px;
+}
+.main .event .info i{
+    color: rgb(0, 33, 118);
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#events .title, #about .title, #videos .title{
+    width: 120px;
+    border-radius: 30px;
+    height: 5px;
+    background-color: rgb(0, 33, 118);
+    text-align: left;
+    margin: 5px;
+}
+#events, #about, #videos{
+    margin-top: 80px;
+}
+#about .details h3{
+    font-weight: 600;
+}
+#about .details p{
+    line-height: 30px;
+    text-align: justify;
+}
+#about h5{
+    line-height: 40px;
+    text-align: justify;
+}
+#about h5 span{
+    font-size: 80px;
+    float: left;
+}
+.details h3{
+    font-weight: 600;
+}
+.details p{
+    line-height: 30px;
+    text-align: justify;
+}
+h5{
+    line-height: 40px;
+    text-align: justify;
+}
+h5 span{
+    font-size: 80px;
+    float: left;
+}
+#about section{
+    padding: 50px 0px;
+}
+#about .equipe img{
+    object-fit: cover;
+    width: 150px;
+    height: 200px;
+    float: left;
+}
+#videos .card-body{
+    background-color: rgb(0, 33, 118);
+    color: #fff;
+}
+#videos .card-body h5{
+    line-height: 1.2rem;
+    text-align: start;
+}
+.main .social i{
+    color: #fff;
+    font-size: 40px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+footer{
+    min-height: 430px;
+    padding: 50px 0px;
+    background-color: #111;
+    color: white;
+}
+footer p{
+    line-height: 30px;
+}
